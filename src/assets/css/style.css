@@ -1,0 +1,138 @@
+::-webkit-scrollbar {
+    width: .45rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--darker-pink);
+    border-radius: 25px;
+}
+
+:root {
+    --white: #FFFDF6;
+    --darker-yellow: #B08D00;
+    --black: #000000;
+    --darker-pink: #560F20;
+}
+
+::selection {
+    background-color: var(--darker-pink);
+    color: var(--white);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+ul,
+ol,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', 'Lora', 'AdornStorySerif';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: var(--white);
+    color: var(--black), (var(--white));
+    overflow-x: hidden;
+}
+
+.phone__modal {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: fixed;
+    right: 2rem;
+    bottom: 15% !important;
+    z-index: 211;
+    transform: scale(0);
+    transition: 0.4s;
+}
+
+@media(max-width:1023px) {
+    .phone__modal {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        position: fixed;
+        right: 30px;
+        bottom: 15% !important;
+        z-index: 211;
+        transform: scale(0);
+        transition: 0.4s;
+    }
+}
+
+@media(max-width:767px) {
+    .phone__modal {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        position: fixed;
+        right: 15px;
+        bottom: 15% !important;
+        z-index: 211;
+        transform: scale(0);
+        transition: 0.4s;
+    }
+}
+
+.show-scroll {
+    bottom: 5rem;
+    transform: scale(1);
+}
+
+#preloader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/preloader.png');
+    background-color: #560F20;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: contain;
+    width: 100% !important;
+    height: 100vh !important;
+    position: fixed;
+    z-index: 11111;
+}
