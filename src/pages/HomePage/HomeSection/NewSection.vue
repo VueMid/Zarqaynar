@@ -5,7 +5,7 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, libero?
     </p>
     <div class="newsSection">
-      <div class="newsItem">
+      <div class="newsItem duration-150" v-motion-pop-visible-once>
         <img src="@/assets/images/news1.jpg" alt="Rasm bor" />
         <div>
           <h3>
@@ -20,8 +20,7 @@
           <hr />
         </div>
       </div>
-
-      <div class="newsItem">
+      <div class="newsItem duration-150" v-motion-pop-visible-once>
         <img src="@/assets/images/nows2.jpg" alt="Rasm bor" />
         <div>
           <h3>
@@ -36,8 +35,7 @@
           <hr />
         </div>
       </div>
-
-      <div class="newsItem">
+      <div class="newsItem duration-150" v-motion-pop-visible-once>
         <img src="@/assets/images/news3.jpg" alt="Rasm bor" />
         <div>
           <h3>
@@ -52,8 +50,7 @@
           <hr />
         </div>
       </div>
-
-      <div class="newsItem">
+      <div class="newsItem duration-150" v-motion-pop-visible-once>
         <img src="@/assets/images/news4.jpg" alt="Rasm bor" />
         <div>
           <h3>
@@ -71,9 +68,7 @@
     </div>
   </div>
 </template>
-
 <script setup></script>
-
 <style lang="scss" scoped>
 .news {
   h1 {
